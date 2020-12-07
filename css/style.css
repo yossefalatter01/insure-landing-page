@@ -1,0 +1,473 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+}
+
+:root {
+  --c1: hsl(256, 26%, 20%);
+  --c2: hsl(216, 30%, 68%);
+  --c3: hsl(270, 9%, 17%);
+  --c4: hsl(273, 4%, 51%);
+  --c5: hsl(0, 0%, 98%);
+}
+
+.navigator {
+  align-items: center;
+  background-color: white;
+  box-shadow: 1px 1px 12px 0px gray;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+}
+.navigator .container .logo {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  margin: 0;
+}
+.navigator .container .nav-items {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+  height: 100%;
+}
+.navigator .container .nav-items li {
+  height: 100%;
+}
+.navigator .container .nav-items li a {
+  color: rgba(150, 152, 166, 0.678);
+  display: block;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  border: 4px solid transparent;
+  text-decoration: none;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  font-weight: 700;
+}
+.navigator .container .nav-items li a:hover {
+  transition: all 0.3s;
+  color: var(--c3);
+}
+.navigator .container .req-btn {
+  outline: none;
+  width: 165px;
+  height: 48px;
+  border: 3px solid var(--c1);
+  color: var(--c1);
+  background-color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 11px;
+}
+.navigator .container .req-btn:hover {
+  transition: all 0.3s;
+  background-color: var(--c3);
+  color: white;
+}
+
+#fixxo {
+  width: 100%;
+  height: 75px;
+}
+
+@media screen and (max-width: 990px) {
+  .naa-btn {
+    outline: none;
+    width: 165px;
+    height: 48px;
+    border: 3px solid var(--c1);
+    color: var(--c1);
+    background-color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-color: white;
+    color: white;
+    background-color: transparent;
+    z-index: 3;
+    outline: none;
+    width: 90%;
+  }
+  .naa-btn:hover {
+    transition: all 0.3s;
+    background-color: var(--c3);
+    color: white;
+  }
+  .naa-btn:hover {
+    transition: all 0.3s;
+    color: var(--c3);
+    background-color: white;
+  }
+
+  .lg-media {
+    display: none;
+  }
+
+  .sm-media {
+    display: block;
+  }
+
+  .req-btn {
+    display: none;
+  }
+
+  .mozo .listo {
+    padding-top: 17px;
+  }
+
+  .dark-con {
+    display: block;
+  }
+
+  .dark-con {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--c3);
+    z-index: 999;
+    padding: 25px;
+  }
+  .dark-con .nav-mb {
+    list-style: none;
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px;
+    padding-top: 30px;
+  }
+  .dark-con .nav-mb li {
+    text-align: center;
+  }
+  .dark-con .nav-mb li a {
+    color: white;
+    text-decoration: none;
+  }
+  .dark-con .nav-mb li a:hover {
+    transition: all 0.3s;
+    color: black;
+  }
+}
+@media screen and (min-width: 990px) {
+  .lg-media {
+    display: block;
+  }
+
+  .sm-media {
+    display: none;
+  }
+
+  .req-btn {
+    display: block;
+  }
+}
+.heading {
+  background-color: var(--c1);
+  height: 602px;
+}
+.heading .left-side {
+  position: relative;
+}
+.heading .left-side:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 158px;
+  height: 2px;
+  background-color: white;
+}
+.heading .left-side h2 {
+  color: white;
+  margin-top: 75px;
+  font-family: "DM Serif Display", serif;
+  font-size: 3.2em;
+  margin-bottom: 0;
+  width: 70%;
+}
+.heading .left-side p {
+  color: white;
+  margin-top: 21px;
+  margin-bottom: 0;
+}
+.heading .left-side button {
+  outline: none;
+  outline: none;
+  width: 165px;
+  height: 48px;
+  border: 3px solid var(--c1);
+  color: var(--c1);
+  background-color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-color: white;
+  color: white;
+  background-color: transparent;
+  margin-top: 31px;
+  position: relative;
+  z-index: 998;
+}
+.heading .left-side button:hover {
+  transition: all 0.3s;
+  background-color: var(--c3);
+  color: white;
+}
+.heading .left-side button:hover {
+  transition: all 0.3s;
+  color: var(--c3);
+  background-color: white;
+}
+.bg-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 111;
+}
+.bg-container .bg-left {
+  position: absolute;
+  top: 505px;
+  left: 0;
+}
+.bg-container .bg-right {
+  position: absolute;
+  top: -1px;
+  right: 0px;
+}
+
+.we-different {
+  padding-bottom: 172px;
+}
+.we-different header {
+  position: relative;
+}
+.we-different header:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 138px;
+  height: 1px;
+  background-color: var(--c2);
+}
+.we-different header h2 {
+  color: var(--c1);
+  padding-bottom: 102px;
+  font-family: "DM Serif Display", serif;
+  font-size: 3.2em;
+  margin-bottom: 0;
+  width: 70%;
+}
+.we-different .items {
+  margin-bottom: 165px;
+}
+.we-different .items .item div {
+  margin-bottom: 44px;
+}
+.we-different .items .item h3 {
+  margin-bottom: 30px;
+}
+.we-different .items .item p {
+  color: var(--c4);
+}
+.we-different .how-we-work {
+  position: relative;
+  background-color: var(--c1);
+}
+.we-different .how-we-work .how-we-work-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.we-different .how-we-work h2 {
+  color: white;
+  font-family: "DM Serif Display", serif;
+  font-size: 3em;
+  margin: 0;
+  width: 451.75px;
+}
+.we-different .how-we-work button {
+  outline: none;
+  width: 165px;
+  height: 48px;
+  border: 3px solid var(--c1);
+  color: var(--c1);
+  background-color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-color: white;
+  color: white;
+  background-color: transparent;
+  z-index: 3;
+  outline: none;
+}
+.we-different .how-we-work button:hover {
+  transition: all 0.3s;
+  background-color: var(--c3);
+  color: white;
+}
+.we-different .how-we-work button:hover {
+  transition: all 0.3s;
+  color: var(--c3);
+  background-color: white;
+}
+
+footer {
+  background-color: var(--c5);
+  padding-top: 66px;
+  padding-bottom: 66px;
+  position: relative;
+  z-index: 150;
+}
+footer .footer-bg {
+  position: absolute;
+  top: 0;
+  left: -2px;
+}
+footer header {
+  position: relative;
+  z-index: 150;
+  padding-bottom: 34px;
+  border: 1px solid transparent;
+  border-bottom-color: rgba(131, 125, 135, 0.14);
+  margin-bottom: 47px;
+}
+footer header div i {
+  color: var(--c4);
+  font-size: 1.7em;
+  cursor: pointer;
+}
+footer header div i:hover {
+  transition: all 0.3s;
+  color: var(--c3);
+}
+footer section {
+  position: relative;
+  z-index: 150;
+}
+footer section div h6 {
+  font-weight: 700;
+  color: var(--c4);
+  text-transform: uppercase;
+}
+footer section div span {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--c3);
+  width: fit-content;
+  cursor: pointer;
+}
+footer section div span:hover {
+  transition: all 0.3s;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 990px) {
+  .heading {
+    padding-top: 107px;
+  }
+
+  .how-we-work {
+    padding: 67px;
+  }
+
+  .we-different {
+    padding-top: 306px;
+  }
+  .we-different header h2 {
+    padding-top: 70px;
+  }
+}
+@media screen and (max-width: 990px) {
+  .nav-bg-mb {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .footer-bg-mb {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .how-we-work-bg-mb {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .bg-left-mb {
+    width: fit-content;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .bg-container-mb {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  .bg-container-mb .bg-right-mb {
+    width: fit-content;
+    position: absolute;
+    bottom: -178px;
+    right: 0;
+  }
+
+  .we-different {
+    padding-top: 142px;
+  }
+  .we-different header h2 {
+    padding-top: 35px;
+  }
+
+  .heading {
+    padding-top: 30px;
+    max-height: 537px;
+  }
+  .heading .left-side {
+    padding: 0;
+  }
+  .heading .left-side::before {
+    display: none;
+  }
+  .heading .left-side h2 {
+    min-width: 100%;
+  }
+  .how-we-work {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+  .how-we-work h2 {
+    max-width: 100%;
+  }
+
+  .we-different header::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .we-different header h2 {
+    min-width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
